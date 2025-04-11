@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "authLevel": "function",
+      "methods": ["get", "post"],
+      "route": "download-attachments"
+    },
+    {
+      "type": "http",
+      "direction": "out"
+    }
+  ]
+}

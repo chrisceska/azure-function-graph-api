@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "CLIENT_ID": "<your-client-id>",
+    "CLIENT_SECRET": "<your-client-secret>",
+    "TENANT_ID": "<your-tenant-id>",
+    "GRAPH_API_SCOPE": "https://graph.microsoft.com/.default"
+  }
+}
