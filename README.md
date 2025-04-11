@@ -57,6 +57,32 @@ To trigger the function, send an HTTP request to the endpoint provided in the co
 - The `shared_code/graph_api.py` file contains the logic for interacting with the Microsoft Graph API.
 - The `HttpTrigger/__init__.py` file contains the main function that handles incoming HTTP requests and processes them accordingly.
 
+## Tests
+
+The project includes unit tests for the `graph_api.py` module, located in the `tests` folder. These tests ensure the functionality of the following methods:
+
+1. **`authenticate_graph_api`**:
+   - Tests successful authentication with the Microsoft Graph API.
+   - Tests failure scenarios with appropriate error handling.
+
+2. **`get_email_attachments`**:
+   - Tests successful retrieval of email attachments from a specified email.
+   - Tests failure scenarios when the API call fails.
+
+3. **`download_attachment`**:
+   - Tests successful downloading of an email attachment.
+   - Tests failure scenarios when the API call fails.
+
+### Running the Tests
+
+To run the tests, use the following command from the root directory of the project:
+
+```bash
+python -m unittest discover -s tests
+```
+
+This will discover and execute all the test cases in the `tests` folder.
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
